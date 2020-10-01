@@ -15,7 +15,9 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <!-- Custom styles for this template -->
-  <link href="css/small-business.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
 </head>
 
@@ -56,11 +58,11 @@
     <!-- Heading Row -->
     <div class="row align-items-center my-5">
       <div class="col-lg-7">
-        <img class="img-fluid rounded mb-4 mb-lg-0" src="./img/me.JPG" alt="">
+        <img class="img-fluid rounded mb-4 mb-lg-0" id="selfie" src="./img/me.JPG" alt="Photo">
       </div>
       <!-- /.col-lg-8 -->
-      <div class="col-lg-5">
-        <h1 class="font-weight-light" id="about">Aaron's Portfolio</h1>
+      <div class="col-lg-5" id="about">
+        <h1 class="font-weight-light">Aaron's Portfolio</h1>
         <p>Who am I? I'm a curious coder that tackles unique problems. I work daily in expanding my
           toolkit to provide a breadth of solutions for front-end and back-end needs. My passion lies in architecting
           systems for users and businesses alike -- a passion I cultivated from my previous work in the hospitality
@@ -71,9 +73,9 @@
     <!-- /.row -->
 
     <!-- Call to Action Well -->
-    <div class="card text-white bg-info my-5 py-4 text-center">
+    <div class="card text-white bg-dark my-5 py-4 text-center" id="projects">
       <div class="card-body">
-        <h2 class="text-white m-0" id="projects">PROJECTS</h2>
+        <h2 class="text-white m-0">PROJECTS</h2>
       </div>
     </div>
 
@@ -152,10 +154,27 @@
       <!-- /.col-md-4 -->
     </div>
     <!-- /.row -->
-    <div class="card text-white bg-secondary my-5 py-4 text-center">
+    <div class="card text-white bg-dark my-5 py-4 text-center">
       <div class="card-body">
-        <p class="text-black m-0" id="contact"><a href="https://www.linkedin.com/in/aaron-rascon-1458641b2/"
-            target="_blank">LinkedIn</a> | <a href="https://github.com/arascry" target="_blank">Github</a></p>
+        <div class="text-black row justify-content-around" id="contact">
+          <div>
+            <p>Linkedin Profile</p>
+            <a href="https://www.linkedin.com/in/aaron-rascon-1458641b2/" target="_blank"><img src="./img/linkedin.png"
+                alt="Linkedin"></a>
+          </div>
+          <div>
+            <p>Github Profile</p>
+            <a href="https://github.com/arascry" target="_blank"><img src="./img/github.png" alt="Github"></a>
+          </div>
+          <div>
+            <p>Resumé</p>
+            <a href="" target="_blank"><img src="./img/pdf.png" alt="Resume"></a>
+          </div>
+          <div>
+            <p>Email</p>
+            <a href="aaron.tucaz@gmail.com" target="_blank"><img src="./img/mail.png" atl="Email"></a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -170,8 +189,8 @@
   </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 
